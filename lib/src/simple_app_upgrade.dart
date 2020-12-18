@@ -344,7 +344,7 @@ class _SimpleAppUpgradeWidget extends State<SimpleAppUpgradeWidget> {
         if (_downloadProgress == 1) {
           //下载完成，跳转到程序安装界面
           _updateDownloadStatus(DownloadStatus.done);
-          Navigator.pop(context);
+          // Navigator.pop(context);
           FlutterUpgrade.installAppForAndroid(path);
         }
       });
